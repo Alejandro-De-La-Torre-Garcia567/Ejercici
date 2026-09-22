@@ -10,8 +10,8 @@ public class App {
         int year =number.nextInt();
 
         int age=2026-year;
-        System.out.println(age);
+        System.out.println("Su edad es: " + age + " años");
 
-        scanner.close();
+        number.close();
     }
 }
