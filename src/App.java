@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
         
-        System.out.print("Introduzca su año de nacimiento:");    
+        System.out.printf("Introduzca su año de nacimiento: ");    
 
         Scanner number = new Scanner(System.in);
 
         int year =number.nextInt();
 
 
-        System.out.print("Introduzca el año actual:");
+        System.out.printf("Introduzca el año actual: ");
 
 
         int currentYear = number.nextInt();
@@ -21,24 +21,24 @@ public class App {
     if(year <0){
 
 
-            System.out.println("Error, el año de nacimiento no puede ser negativo");
+            System.out.printf("Error, el año de nacimiento no puede ser negativo");
             return;
 
     }
 
     if(currentYear <0){
 
-            System.out.println("Error, el año actual no puede ser negativo");
+            System.out.printf("Error, el año actual no puede ser negativo");
             return;
     }
 
     if(year>currentYear){
 
-            System.out.println("Error, el año de nacimiento no puede ser mayor que el año actual");
+            System.out.printf("Error, el año de nacimiento no puede ser mayor que el año actual");
             return;
     }
 
-        System.out.println("Su edad es: " + age + " años");
+        System.out.printf("Su edad es: " + "%d" + " años", age);
 
         number.close();
     }
