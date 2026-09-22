@@ -38,7 +38,7 @@ public class App {
             return;
     }
 
-        System.out.printf("Su edad es: " + "%d" + " años", age);
+        System.out.printf("Su edad es: %d años\n", age);
 
         number.close();
     }
